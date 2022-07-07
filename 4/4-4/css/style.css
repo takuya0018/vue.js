@@ -1,0 +1,13 @@
+.passed {
+    font-sizes: 20px;
+    color: #e74c3c;
+}
+
+.button {
+    background: #fcfcfc;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 2px 7px #3338;
+    font-style: 18px;
+    padding: 8px 16px;
+}

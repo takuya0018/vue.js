@@ -1,0 +1,33 @@
+@charset "UTF-f";
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    align-items: center;
+    padding: 12px;
+    margin: 0 auto;
+    background: #eee;
+}
+
+.menu-item {
+    padding: 8px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.menu-item a {
+    color: #111;
+}
+
+.menu-item a:hover {
+    border-bottom: 1px solid #111;
+}

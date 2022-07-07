@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-2</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <button @click="inpush">+</button>
+        <button @click="dec">-</button>
+        <p>{{ count }}</p>
+        <div v-if="isPass" class="passed">
+            <p>合格です</p>
+            <section>
+                <h2>おめでとうございます</h2>
+                <p>これからもがんばりましょう</p>
+            </section>
+        </div>
+        <div v-else-if="isCen">
+            <p>{{ count }}です</p>
+        </div>
+        <div v-else><p>不合格</p></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
