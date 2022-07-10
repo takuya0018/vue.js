@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="app">
+        v-bind[{{ data1 }}]
+        <div><input type="text" v-bind:value="data1"></div>
+        <br><br>
+        v-model[{{ data2 }}]
+        <div><input type="text" v-model="data2"></div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            data1: "data1",
+            data2: "data2"
+        }
+    })
+</script>
+</body>
+</html>
