@@ -44,7 +44,7 @@ new Vue({
         doneTodo() {
             return this.todos.filter( (todo) => {
                 return todo.isDone === true;
-            });
+            } );
         },
         incompleteTodo() {
             return this.todos.filter( todo => todo.isDone === false );
